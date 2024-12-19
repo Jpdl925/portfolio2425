@@ -1,5 +1,3 @@
-import { BentoGrid } from "./BentoGrid";
-import { FloatingNavbar } from "./FloatNavbar";
 import { Spotlight } from "./Spotlight"
 import TailwindButton from "./TailwindButton"
 import { TextGenerateEffect } from "./TextGenerateEffect"
