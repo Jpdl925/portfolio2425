@@ -2,7 +2,7 @@ import Grid from "@/components/Grid";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNavbar } from "@/components/ui/FloatNavbar";
 import Hero from "@/components/ui/Hero";
-import { navItems } from "@/data";
+import { navItems } from "@/data/index";
 
 
 
