@@ -162,16 +162,16 @@ export const BentoGridItem = ({
                   autoplay:copied,
                   animationData,
                   rendererSettings:{
-                    preserveAspectRatio:'xMidyMid slice'
+                    preserveAspectRatio:'xMidYMid slice'
                   }
                 }}
                 />
               </div>
                 <TailwindButton 
-                title={copied ? 'Email copied' : 'Copy my Email'}
+                title={copied ? 'Email copied': 'Copy my Email'}
                 icon={<IoCopyOutline/>}
                 position="left"
-                otherClasses='!bg-[#161e31]'
+                otherClasses="z-10"
                 handleClick={handleCopy}
                 />
             </div>
