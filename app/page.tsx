@@ -4,7 +4,8 @@ import { FloatingNavbar } from "@/components/ui/FloatNavbar";
 import Hero from "@/components/ui/Hero";
 import { navItems } from "@/data";
 
-
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
 
 
 export default function Home() {
