@@ -39,11 +39,12 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   spareImg,
+  aboutsection
 }: {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
-
+  aboutsection?: string | React.ReactNode;
   id?: number;
   img?: string;
   imgClassName?: string;
@@ -81,6 +82,8 @@ export const BentoGridItem = ({
           )}
         </div>
 
+
+
         <div
           className={`absolute right-0 -bottom-5 ${
             id === 5 && "w-full opacity-80"
@@ -113,6 +116,9 @@ export const BentoGridItem = ({
           </div>
           <div className="font-sans font-bold text-lg text-neutral-200 lg:text-3xl max-w-96 z-10">
             {title}
+          </div>
+          <div className="font-sans font-light md:text-base sm:text-xs text-neutral-200 max-h-full ">
+          {aboutsection}
           </div>
           {id === 2 && (
             <BackgroundLines>
@@ -175,7 +181,9 @@ export const BentoGridItem = ({
                 handleClick={handleCopy}
                 />
             </div>
+            
           )}
+          
         </div>
       </div>
     </div>

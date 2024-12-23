@@ -7,7 +7,7 @@ const Grid = () => {
   return (
     <section id="about">
     <BentoGrid>
-        {gridItems.map(({title,description,id,className,img,imgClassName,titleClassName,spareImg}) => (
+        {gridItems.map(({title,description,id,className,img,imgClassName,titleClassName,spareImg,aboutsection}) => (
             <BentoGridItem
             id={id}
             key={id}
@@ -18,6 +18,7 @@ const Grid = () => {
             imgClassName={imgClassName}
             titleClassName={titleClassName}
             spareImg={spareImg}
+            aboutsection={aboutsection}
             />
         ))
         }

@@ -8,23 +8,24 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "AI Chatbot for Customer Support",
-      description: "Enhancing client communication with AI-driven chat automation.",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-      imgClassName: "w-full h-full",
+      title: "",
+      description: "",
+      className: " lg:col-span-2 md:col-span-3 md:row-span-2 lg:min-h-[60vh]",
+      imgClassName: " w-full h-full",
       titleClassName: "justify-end",
-      img: "/z1.svg",
+      img: "/ProfilePic.svg",
       spareImg: "",
     },
     {
       id: 2,
-      title: "Real-Time Weather Dashboard",
-      description: "Displaying live weather updates and forecasts globally.",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+      title: "About Me",
+      description: "",
+      className: "sm:max-h-full max-h-48 overflow-scroll lg:col-span-3 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-start",
       img: "",
       spareImg: "",
+      aboutsection:"Hello there! Ever since I can remember, I’ve been fascinated by technology in all its forms. Whether it’s hardware or software, I’ve always enjoyed learning about how things work and figuring out ways to make them work better. My love for gaming as a kid played a huge role in sparking my interest in tech. Gaming not only entertained me but also opened my eyes to the complex systems behind the scenes, fueling my curiosity to dive deeper into the world of technology. For the past three years, I’ve been working as a repair technician, specializing in electronic devices. While most of my work involves repairing phones, I’ve tackled all sorts of gadgets whenever I can source the necessary parts. This role has strengthened my problem-solving skills and given me hands-on experience with a wide range of technology, enhancing my understanding of hardware systems. In addition to my hands-on experience, I’ve also attended an online course called CodeStack Academy, where I learned coding and built a strong foundation in software development. This education has given me the skills and confidence to pursue opportunities in the software field. Looking ahead, I’m eager to transition into a role focused on software, where I can broaden my expertise and take the next step in my career. I’m excited to contribute my passion for technology, build new skills, and continue growing in an ever-evolving field."
     },
     {
       id: 3,
