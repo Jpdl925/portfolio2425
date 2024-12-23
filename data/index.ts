@@ -25,7 +25,7 @@ export const navItems = [
       titleClassName: "justify-start",
       img: "",
       spareImg: "",
-      aboutsection:"Hello there! Ever since I can remember, I’ve been fascinated by technology in all its forms. Whether it’s hardware or software, I’ve always enjoyed learning about how things work and figuring out ways to make them work better. My love for gaming as a kid played a huge role in sparking my interest in tech. Gaming not only entertained me but also opened my eyes to the complex systems behind the scenes, fueling my curiosity to dive deeper into the world of technology. For the past three years, I’ve been working as a repair technician, specializing in electronic devices. While most of my work involves repairing phones, I’ve tackled all sorts of gadgets whenever I can source the necessary parts. This role has strengthened my problem-solving skills and given me hands-on experience with a wide range of technology, enhancing my understanding of hardware systems. In addition to my hands-on experience, I’ve also attended an online course called CodeStack Academy, where I learned coding and built a strong foundation in software development. This education has given me the skills and confidence to pursue opportunities in the software field. Looking ahead, I’m eager to transition into a role focused on software, where I can broaden my expertise and take the next step in my career. I’m excited to contribute my passion for technology, build new skills, and continue growing in an ever-evolving field."
+      aboutsection:"Hello there! Ever since I can remember, I’ve been fascinated by technology in all its forms. Whether it’s hardware or software, I’ve always enjoyed learning about how things work and figuring out ways to make them work better. My love for gaming as a kid played a huge role in sparking my interest in tech. Gaming not only entertained me but also opened my eyes to the complex systems behind the scenes, fueling my curiosity to dive deeper into the world of technology. For the past two and a half years, I’ve been working as a repair technician, specializing in electronic devices. While most of my work involves repairing phones, I’ve tackled all sorts of gadgets whenever I can source the necessary parts. This role has strengthened my problem-solving skills and given me hands-on experience with a wide range of technology, enhancing my understanding of hardware systems. In addition to my hands-on experience, I’ve also attended an online course called CodeStack Academy, where I learned coding and built a strong foundation in software development. This education has given me the skills and confidence to pursue opportunities in the software field. Looking ahead, I’m eager to transition into a role focused on software, where I can broaden my expertise and take the next step in my career. I’m excited to contribute my passion for technology, build new skills, and continue growing in an ever-evolving field."
     },
     {
       id: 3,
@@ -34,37 +34,27 @@ export const navItems = [
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
-      img: "",
+      img: "/b5.svg",
       spareImg: "",
-    },
-    {
-      id: 4,
-      title: "Interactive Financial Dashboard",
-      description: "Visualize and manage your financial data effectively.",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "/grid.svg",
-      spareImg: "/b4.svg",
     },
   
     {
-      id: 5,
-      title: "Fitness Tracker with AI Analytics",
-      description: "Track workouts and get personalized AI-driven insights.",
+      id: 4,
+      title: "Past Experiences",
+      description: "This section highlights my technical expertise and hands-on experience in device repair, customer service, and technical support roles.",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
+      img: "",
       spareImg: "/grid.svg",
     },
     {
-      id: 6,
-      title: "E-Learning Platform for Developers",
-      description: "Access coding tutorials, challenges, and mentorship in one place.",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+      id: 5,
+      title: "Email Me",
+      description: "Questions? Suggestions? Reach Me?",
+      className: "lg:col-span-6 md:col-span-6 md:row-span-1",
       imgClassName: "",
-      titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+      titleClassName: "md:max-w-full text-center",
       img: "",
       spareImg: "",
     },
@@ -105,101 +95,19 @@ export const navItems = [
     },
   ];
   
-  export const testimonials = [
-    {
-      quote:
-        "Working with {your name here} was transformative for our business. His creativity and technical expertise allowed us to launch a stunning platform on time and beyond expectations.",
-      name: "Emily Carter",
-      title: "CEO of Some company",
-    },
-    {
-      quote:
-        "{your name here} ability to translate complex requirements into user-friendly designs is unmatched. We achieved a 200% increase in user engagement after our project launch.",
-      name: "John Thompson",
-      title: "CTO of Some company"
-    },
-    {
-      quote:
-        "{your name here} brought fresh ideas and precise execution to our platform redesign. He was professional, proactive, and always delivered high-quality work on time.",
-      name: "Sarah Lee",
-      title: "Product Manager at Some company",
-    },
-    {
-      quote:
-        "{your name here} attention to detail and passion for excellence stood out during our collaboration. Our website now reflects our brand perfectly, thanks to his contributions.",
-      name: "Marcus Allen",
-      title: "Founder of Some company",
-    },
-    {
-      quote:
-        "{your name here} is a rare talent. His understanding of both design and development helped us create a seamless, visually appealing, and performant application.",
-      name: "Rachel Green",
-      title: "Director of Some company",
-    },
-  ];
-  
-  
-  export const companies = [
-    {
-      id: 1,
-      name: "Some company",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "Some company",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "Some company",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "Some company",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "Some company",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
-  ];
-  
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-      className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
+      title: "Target",
+      date:"(2019-2022)",
+      desc: ["Worked in Electronics department.","Collaborated closely with security and management.", "Informed customers about products and assisted with purchasing decisions.", "Helped set up phone lines with Consumer Cellular.", "Set up and maintained product displays.", "Restocked products and maintained a clean workspace."],
+
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
-    },
-    {
-      id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
-    },
-    {
-      id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
-      className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
+      title: "uBreakiFix",
+      date:"(2022-current)",
+      desc: ["Assisted customers with both software and hardware issues.", "Repaired a wide range of devices, including phones, laptops, desktops, TVs, and gaming consoles.", "Performed soldering work on motherboards.", "Conducted custom laser engraving.", "Performed field repairs at customers' homes using a mobile repair van."],
     },
   ];
   

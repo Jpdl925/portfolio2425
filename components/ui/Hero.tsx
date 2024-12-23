@@ -32,9 +32,9 @@ const Hero = () => {
               <h2 className="uppercase tracking-widest text-xs text-center text-gray-50 max-w-80">Dynamic web Magic Next.js</h2>
 
               <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-6xl" words="Hey There! I'm your friendly neighborhood coder"/>
-              <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hello, I am Julius</p>
+              <p className=" text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hello, I am Julius</p>
               <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">A Next.js Developer based in Stockton, CA</p>
-            <a href="#about"><TailwindButton position="right" title="My Projects" icon={<GoProjectRoadmap/>}/></a>
+            <a href="#projects"><TailwindButton position="right" title="My Projects" icon={<GoProjectRoadmap/>}/></a>
           </div>
         </div>
 

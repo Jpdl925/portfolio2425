@@ -1,13 +1,14 @@
-'use client'
+"use client";
 
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { BackgroundLines } from "./BackgroundLines";
 import Lottie from "react-lottie";
-import { useState } from "react";
-import animationData from '@/data/confetti.json'
+import React, { useState } from "react";
+import animationData from "@/data/confetti.json";
 import TailwindButton from "./TailwindButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { workExperience } from "@/data";
 
 export const BentoGrid = ({
   className,
@@ -33,13 +34,12 @@ export const BentoGridItem = ({
   className,
   title,
   description,
-
   id,
   img,
   imgClassName,
   titleClassName,
   spareImg,
-  aboutsection
+  aboutsection,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -50,14 +50,14 @@ export const BentoGridItem = ({
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
+  workexperience?: boolean;
 }) => {
-
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('myemail@myemail.com');
+    navigator.clipboard.writeText("juliuscodes@gmail.com");
     setCopied(true);
-  }
+  };
 
   return (
     <div
@@ -82,8 +82,6 @@ export const BentoGridItem = ({
           )}
         </div>
 
-
-
         <div
           className={`absolute right-0 -bottom-5 ${
             id === 5 && "w-full opacity-80"
@@ -98,12 +96,14 @@ export const BentoGridItem = ({
           )}
         </div>
 
-        {id === 6 && (
+        {id === 5 && (
           //render animation
           <BackgroundGradientAnimation>
             <div className="absolute z-50 flex items-center justify-center text-white font-bold"></div>
           </BackgroundGradientAnimation>
         )}
+
+
 
         <div
           className={cn(
@@ -114,12 +114,13 @@ export const BentoGridItem = ({
           <div className="font-sans font-extralight text-neutral-200 text-sm md:text-xs lg:text-base z-10">
             {description}
           </div>
-          <div className="font-sans font-bold text-lg text-neutral-200 lg:text-3xl max-w-96 z-10">
+          <div className="font-sans font-bold text-lg text-neutral-200 lg:text-3xl z-10 ">
             {title}
           </div>
-          <div className="font-sans font-light md:text-base sm:text-xs text-neutral-200 max-h-full ">
-          {aboutsection}
+          <div className="font-sans font-light lg:text-lg md:text-base sm:text-xs text-neutral-200 max-h-full ">
+            {aboutsection}
           </div>
+
           {id === 2 && (
             <BackgroundLines>
               <div></div>
@@ -159,32 +160,47 @@ export const BentoGridItem = ({
               </div>
             </div>
           )}
-          {id === 6 && (
+          {id === 5 && (
             <div className="mt-5 relative">
               <div className="absolute -bottom-5 right-0">
-                <Lottie 
-                options={{
-                  loop:copied,
-                  autoplay:copied,
-                  animationData,
-                  rendererSettings:{
-                    preserveAspectRatio:'xMidYMid slice'
-                  }
-                }}
+                <Lottie
+                  options={{
+                    loop: copied,
+                    autoplay: copied,
+                    animationData,
+                    rendererSettings: {
+                      preserveAspectRatio: "xMidYMid slice",
+                    },
+                  }}
                 />
               </div>
-                <TailwindButton 
-                title={copied ? 'Email copied': 'Copy my Email'}
-                icon={<IoCopyOutline/>}
+              <TailwindButton
+                title={copied ? "Email copied" : "Copy my Email"}
+                icon={<IoCopyOutline />}
                 position="left"
                 otherClasses="z-10"
                 handleClick={handleCopy}
-                />
+              />
             </div>
-            
           )}
-          
+
+          <div>
+            <ul>
+
+                  {id === 4 && (
+                    workExperience.map(({ title, date, desc }) => (
+                      <div key={id}>
+                        <li className="text-lg pt-5">{title}</li>
+                        <li className="text-base">{date}</li>
+                <li className="list-item break-after-auto list-disc">{desc.map((skill) => (
+                  <li key={skill}>{skill}</li>
+                ))}</li>
+            </div>
+          )))}
+          </ul>
+          </div>
         </div>
+        
       </div>
     </div>
   );
